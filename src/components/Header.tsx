@@ -1,11 +1,13 @@
 import React from 'react';
+import Navbar from './Navbar';
+import { BrowserRouter } from 'react-router-dom';
 
 const Header: React.FC = () => {
   return (
     <header>
-      <h1>Elevate Your Fitness Brand</h1>
-      <p>Custom Websites, Apps, and SaaS Solutions for Influencers</p>
-      <button>Get Started</button>
+      <BrowserRouter>
+        <Navbar />
+      </BrowserRouter>
     </header>
   );
 }
